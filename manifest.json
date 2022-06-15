@@ -1,10 +1,10 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "OnlyTheBasic",
     "version": "1.0",
     "description": "Tributo ah lenda da 303",
     "permissions": ["tabs", "bookmarks"],
-    "action": {
+    "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {
         "16": "assets/Eric_Bombado_16.png",
