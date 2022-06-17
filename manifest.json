@@ -1,21 +1,22 @@
 {
-    "manifest_version": 2,
-    "name": "OnlyTheBasic",
-    "version": "1.0",
-    "description": "Tributo ah lenda da 303",
-    "permissions": ["tabs", "bookmarks"],
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "assets/Eric_Bombado_16.png",
-        "32": "assets/Eric_Bombado_32.png",
-        "48": "assets/Eric_Bombado_48.png"
+  "manifest_version": 2,
+  "name": "OnlyTheBasic",
+  "version": "1.0",
+  "description": "Tributo ah lenda da 303",
+  "permissions": ["tabs", "bookmarks"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/Eric_Bombado_16.png",
+      "32": "assets/Eric_Bombado_32.png",
+      "48": "assets/Eric_Bombado_48.png"
+    }
+  },
+  "content_scripts":[
+      {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery/jquery.min.js",
+        "main.js"]
       }
-    },
-    "content_scripts":[
-        {
-        "matches": ["https://*/*"],
-        "js": ["main.js"]
-        }
-      ]
-  }
+    ]
+}
